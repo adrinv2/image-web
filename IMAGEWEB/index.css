@@ -27,6 +27,26 @@ img {
   margin-bottom: 10px;
 }
 
+#sat {
+  object-fit: contain;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  animation-name: example;
+  animation-duration: 50s;
+   animation-iteration-count:infinite;
+}
+#satimg{
+        max-width: 100%;
+        max-height: 100%;
+        display: block;
+    }
+
+@keyframes example {
+  0%   {left:-5vw; top:0vh;}
+  50%  { left:105vw; top:40vh;}
+  100% {left:50vw; top:105vh;}
+}
 
 
 
