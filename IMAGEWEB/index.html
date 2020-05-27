@@ -40,16 +40,16 @@ body {
 
 
 <script>
+// Do not name the function "play()"
 function playVideo(){
+  console.log('i start');
     var video = document.getElementById('video');
-    video.play();
     video.addEventListener('ended',function(){
         window.location = "main.html";
-        console.log('Video stopped either because 1) it was over, ' +
-      'or 2) no further data is available.');
+        console.log('Video stopped either because 1) it was over, ' + 'or 2) no further data is available.');
     });
 }
-
+playVideo();
 </script>
 
 
