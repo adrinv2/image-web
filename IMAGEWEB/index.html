@@ -29,19 +29,6 @@ body {
 }
 </style>
 
-<script src="text/javascript">
-// Do not name the function "play()"
-function playVideo(){
-    var video = document.getElementById('video');
-    video.play();
-    video.addEventListener('ended',function(){
-        window.location = "main.html";
-    });
-}
-
-
-
-</script>
 <video autoPlay id="myVideo" >
     <source src="media/opening.mp4" type="video/mp4" />
 </video>
@@ -49,4 +36,20 @@ function playVideo(){
 
 
   </body>
+
+
+  <script src="text/javascript">
+  // Do not name the function "play()"
+  function playVideo(){
+      var video = document.getElementById('video');
+      video.play();
+      video.addEventListener('ended',function(){
+          window.location = "main.html";
+      });
+  }
+
+
+
+  </script>
+  
   </html>
