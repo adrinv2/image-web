@@ -43,7 +43,7 @@ body {
 // Do not name the function "play()"
 function playVideo(){
   console.log('i start');
-    var video = document.getElementById('video');
+    var video = document.getElementById('myVideo');
     video.addEventListener('ended',function(){
         window.location = "main.html";
         console.log('Video stopped either because 1) it was over, ' + 'or 2) no further data is available.');
